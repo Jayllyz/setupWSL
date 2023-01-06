@@ -144,9 +144,18 @@ dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /nores
    sudo apt install clang-format -y```
    ````
 
-5. Update and upgrade.
+5. Install Node and NPM.
 
    ```bash
+   # Node and NPM
+   sudo apt install nodejs -y
+   sudo apt install npm -y
+   ```
+
+6. Update and upgrade.
+
+   ```bash
+   # Update and upgrade everything
    sudo apt update && sudo apt upgrade -y
    ```
 

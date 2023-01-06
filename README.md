@@ -8,7 +8,7 @@
 - [Configuration](#configuration)
   - [Windows Terminal](#windows-terminal)
   - [Better terminal with Zsh](#better-terminal-with-zsh)
-  - [Build essentials, Git, Cmake, Clang.](#build-essentials-git-cmake-clang)
+  - [Build essentials, Git, Cmake, Clang \& Node.](#build-essentials-git-cmake-clang--node)
 
 ## What is WSL?
 

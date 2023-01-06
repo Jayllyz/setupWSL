@@ -116,7 +116,7 @@ dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /nores
    bind ^S savefile main # CTRL+S - Save
    ```
 
-### Build essentials, Git, Cmake, Clang.
+### Build essentials, Git, Cmake, Clang & Node.
 
 1. Install build essentials.
 

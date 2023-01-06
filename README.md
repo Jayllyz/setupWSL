@@ -138,11 +138,11 @@ dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /nores
 
 4. Install Clang and Clang-format.
 
-   ````bash
+   ```bash
    # C compiler and formatter
    sudo apt install clang -y
-   sudo apt install clang-format -y```
-   ````
+   sudo apt install clang-format -y
+   ```
 
 5. Install Node and NPM.
 

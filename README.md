@@ -28,7 +28,7 @@ dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /nores
 
 2. Open Microsoft Store and install the latest version of [WSL](https://www.microsoft.com/store/productId/9P9TQF7MRM4R).
 
-3. Again in Microsoft Store, install your desired Linux distribution. I recommend [Ubuntu}(https://www.microsoft.com/store/productId/9PDXGNCFSCZV).
+3. Again in Microsoft Store, install your desired Linux distribution. I recommend [Ubuntu](https://www.microsoft.com/store/productId/9PDXGNCFSCZV).
 
 4. Restart your computer.
 

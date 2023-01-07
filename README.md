@@ -3,20 +3,20 @@
 ## Table of Contents
 
 - [Table of Contents](#table-of-contents)
-- [What is WSL?](#what-is-wsl)
-- [Installation](#installation)
-- [Configuration](#configuration)
+- [What is WSL? :thinking:](#what-is-wsl-thinking)
+- [Installation :computer:](#installation-computer)
+- [Configuration :wrench:](#configuration-wrench)
   - [Windows Terminal](#windows-terminal)
   - [Better terminal with Zsh](#better-terminal-with-zsh)
   - [Build essentials, Git, Cmake, Clang \& Node.](#build-essentials-git-cmake-clang--node)
 
-## What is WSL?
+## What is WSL? :thinking:
 
 The Windows Subsystem for Linux (WSL) is a feature of Windows that allows you to run native Linux command-line tools directly on Windows. It provides a Linux-compatible kernel interface developed by Microsoft, which allows you to use a wide range of Linux applications on Windows. With WSL, you can run shell scripts, install and use Linux command-line utilities, and even create and run your own custom scripts.
 
 WSL is different from a traditional virtual machine in that it allows you to run Linux applications directly on the Windows kernel. This means that you can use Linux tools and utilities at the same level of performance as if they were running on a native Linux system.
 
-## Installation
+## Installation :computer:
 
 1. Open PowerShell as Administrator and run:
 
@@ -36,7 +36,7 @@ dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /nores
 
 6. When installed, you will be prompted to create a new user account and password. This will be the user account you will use to log in to your Linux distribution.
 
-## Configuration
+## Configuration :wrench:
 
 ### Windows Terminal
 
@@ -66,7 +66,7 @@ dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /nores
     sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
    ```
 
-3. Install Zsh plugins.
+3. Install Zsh plugins, you can find more plugins [here](https://github.com/ohmyzsh/ohmyzsh/wiki/Plugins).
 
    ```bash
    # Zsh plugins
@@ -76,7 +76,7 @@ dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /nores
    # plugins=(git zsh-autosuggestions zsh-syntax-highlighting)
    ```
 
-4. Install [Powerlevel10k](https://github.com/romkatv/powerlevel10k).
+4. Install [Powerlevel10k](https://github.com/romkatv/powerlevel10k), if you want to use another theme, you can find more themes [here](https://github.com/ohmyzsh/ohmyzsh/wiki/Themes).
 
    ```bash
     # Powerlevel10k

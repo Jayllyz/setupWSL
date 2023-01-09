@@ -21,8 +21,6 @@ WSL is different from a traditional virtual machine in that it allows you to run
 1. Open PowerShell as Administrator and run:
 
 ```powershell
-dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart
-
 dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart
 ```
 

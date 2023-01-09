@@ -68,7 +68,7 @@ wsl --install
    # Zsh plugins
    git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
    git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
-   # Add the following lines to your ~/.zshrc file:
+   # Add the following line to your ~/.zshrc file:
    # plugins=(git sudo docker npm vscode zsh-autosuggestions zsh-syntax-highlighting)
    ```
 

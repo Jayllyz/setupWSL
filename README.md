@@ -25,11 +25,12 @@ WSL is different from a traditional virtual machine in that it allows you to run
 # To see all available distribution use : wsl --list -online
 wsl --install
 ```
+
 2. Restart your computer.
 
-5. Search the distribution you have chosen in the Start menu and run it.
+3. Search the distribution you have chosen in the Start menu and run it.
 
-6. When installed, you will be prompted to create a new user account and password. This will be the user account you will use to log in to your Linux distribution.
+4. When installed, you will be prompted to create a new user account and password. This will be the user account you will use to log in to your Linux distribution.
 
 ## Configuration :wrench:
 
@@ -68,7 +69,7 @@ wsl --install
    git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
    git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
    # Add the following lines to your ~/.zshrc file:
-   # plugins=(git zsh-autosuggestions zsh-syntax-highlighting)
+   # plugins=(git sudo docker npm vscode zsh-autosuggestions zsh-syntax-highlighting)
    ```
 
 4. Install [Powerlevel10k](https://github.com/romkatv/powerlevel10k), if you want to use another theme, you can find more themes [here](https://github.com/ohmyzsh/ohmyzsh/wiki/Themes).
@@ -155,5 +156,7 @@ wsl --install
    ```
 
 You are now ready to start developing on WSL! :tada:
+
+If your favorite IDE is VSCode, you can find a tutorial [here](https://code.visualstudio.com/docs/remote/wsl).
 
 Made with :heart: by [@Jayllyz](https://github.com/Jayllyz)

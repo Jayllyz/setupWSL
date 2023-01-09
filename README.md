@@ -21,16 +21,13 @@ WSL is different from a traditional virtual machine in that it allows you to run
 1. Open PowerShell as Administrator and run:
 
 ```powershell
-dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart
+# Default distribution is Ubuntu if you another one use : wsl --install -d <Distribution name>
+# To see all available distribution use : wsl --list -online
+wsl --install
 ```
+2. Restart your computer.
 
-2. Open Microsoft Store and install the latest version of [WSL](https://www.microsoft.com/store/productId/9P9TQF7MRM4R).
-
-3. Again in Microsoft Store, install your desired Linux distribution. I recommend [Ubuntu](https://www.microsoft.com/store/productId/9PDXGNCFSCZV).
-
-4. Restart your computer.
-
-5. Search for your desired Linux distribution in the Start menu and run it.
+5. Search the distribution you have chosen in the Start menu and run it.
 
 6. When installed, you will be prompted to create a new user account and password. This will be the user account you will use to log in to your Linux distribution.
 

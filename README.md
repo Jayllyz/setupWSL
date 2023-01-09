@@ -21,7 +21,7 @@ WSL is different from a traditional virtual machine in that it allows you to run
 1. Open PowerShell as Administrator and run:
 
 ```powershell
-# Default distribution is Ubuntu if you another one use : wsl --install -d <Distribution name>
+# Default distribution is Ubuntu if you want another one use : wsl --install -d <Distribution name>
 # To see all available distribution use : wsl --list -online
 wsl --install
 ```

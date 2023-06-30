@@ -129,7 +129,7 @@ sudo apt install build-essential -y
 sudo apt install git -y
 ```
 
-3. Install Docker and Docker compose [script repo](https://github.com/docker/docker-install).
+3. Install Docker and Docker compose ([script repo](https://github.com/docker/docker-install)).
 ```bash
 curl -fsSL https://get.docker.com -o get-docker.sh
 sh get-docker.sh

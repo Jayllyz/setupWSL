@@ -8,7 +8,7 @@
 - [Configuration :wrench:](#configuration-wrench)
   - [Windows Terminal](#windows-terminal)
   - [Better terminal with Zsh](#better-terminal-with-zsh)
-  - [Build essentials, Git, Cmake, Clang \& Node.](#build-essentials-git-cmake-clang--node)
+  - [Basic installation](#basic-installation)
 
 ## What is WSL? :thinking:
 
@@ -40,7 +40,7 @@ wsl --install
 
 1. Open Microsoft Store and install [Windows Terminal](https://apps.microsoft.com/store/detail/windows-terminal/9N0DX20HK701?hl=fr-fr&gl=fr&rtc=1).
 
-   This terminal is a modern, fast, efficient, powerful, and productive terminal application for users of command-line tools and shells like Command Prompt, PowerShell, and WSL.
+   > This terminal is a modern, fast, efficient, powerful, and productive terminal application for users of command-line tools and shells like Command Prompt, PowerShell, and WSL.
 
 2. Open Windows Terminal and click on the settings icon in the top right corner.
 
@@ -93,6 +93,7 @@ sudo apt install nano -y
 
 nano ~/.nanorc
 # Put this in the file:
+
 set atblanks
 set mouse
 set cutfromcursor
@@ -114,9 +115,9 @@ bind ^V paste all # CTRL+V - Past
 bind ^S savefile main # CTRL+S - Save
 ```
 
-### Build essentials, Git, Cmake, Clang & Node.
+### Basic installation
 
-1. Install build essentials.
+1. Install build essential.
 
 ```bash
 sudo apt install build-essential -y
@@ -128,26 +129,17 @@ sudo apt install build-essential -y
 sudo apt install git -y
 ```
 
-3. Install Cmake.
-
+3. Install Docker and Docker compose [script repo](https://github.com/docker/docker-install).
 ```bash
-sudo apt install cmake -y
+curl -fsSL https://get.docker.com -o get-docker.sh
+sh get-docker.sh
 ```
 
-4. Install Clang and Clang-format.
-
-```bash
-# C compiler and formatter
-sudo apt install clang -y
-sudo apt install clang-format -y
-```
-
-5. Install Node and NPM.
+5. Install Node and NPM (or [pnpm](https://pnpm.io/installation)).
 
 ```bash
 # Node and NPM
-sudo apt install nodejs -y
-sudo apt install npm -y
+sudo apt install nodejs npm -y
 ```
 
 6. Update and upgrade.

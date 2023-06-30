@@ -46,7 +46,7 @@ wsl --install
 
 3. In the settings, click on the dropdown menu under "Default profile" and select your desired Linux distribution.
 
-4. Don't forget to set Windows Terminal as your default terminal and you're good to go! (Windows 11 only)
+4. Don't forget to set Windows Terminal as your default terminal and you're good to go!
 
 ### Better terminal with Zsh
 

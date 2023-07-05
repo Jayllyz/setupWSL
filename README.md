@@ -129,20 +129,17 @@ sudo apt install build-essential -y
 sudo apt install git -y
 ```
 
-3. Install Docker and Docker compose ([script repo](https://github.com/docker/docker-install)).
-```bash
-curl -fsSL https://get.docker.com -o get-docker.sh
-sudo sh get-docker.sh
-```
+3. Install [Docker Desktop](https://docs.docker.com/desktop/wsl/).
+> Docker Desktop uses the dynamic memory allocation feature in WSL 2 to improve the resource consumption.
 
-5. Install Node and NPM (or [pnpm](https://pnpm.io/installation)).
+4. Install Node and NPM (or [pnpm](https://pnpm.io/installation)).
 
 ```bash
 # Node and NPM
 sudo apt install nodejs npm -y
 ```
 
-6. Update and upgrade.
+5. Update and upgrade.
 
 ```bash
 # Update and upgrade everything

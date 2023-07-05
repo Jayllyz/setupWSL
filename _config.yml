@@ -1,0 +1,6 @@
+plugins:
+  - jekyll-remote-theme
+  - jemoji
+  - jekyll-include-cache
+
+theme: jekyll-theme-cayman

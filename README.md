@@ -50,14 +50,14 @@ wsl --install
 
 ### Better terminal with Zsh
 
-1. Install Zsh.
+1. Install [ZSH](https://zsh.sourceforge.io/).
 
 ```bash
 # Zsh is a shell designed for interactive use, you can have plugins, themes, etc.
 sudo apt install zsh -y
 ```
 
-2. Install Oh My Zsh.
+2. Install [Oh My Zsh](https://ohmyz.sh/).
 
 ```bash
 # Oh My Zsh is an open source, community-driven framework for managing your Zsh configuration.
@@ -77,15 +77,15 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:
 4. Install [Powerlevel10k](https://github.com/romkatv/powerlevel10k), if you want to use another theme, you can find more themes [here](https://github.com/ohmyzsh/ohmyzsh/wiki/Themes).
 
 ```bash
-   # Powerlevel10k
-   git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/powerlevel10k
-   echo 'source ~/powerlevel10k/powerlevel10k.zsh-theme' >>~/.zshrc
-   # Set ZSH_THEME="powerlevel10k/powerlevel10k" in ~/.zshrc.
-   # exec zsh
-   # p10k configure
+# Powerlevel10k
+git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/powerlevel10k
+echo 'source ~/powerlevel10k/powerlevel10k.zsh-theme' >>~/.zshrc
+# Set ZSH_THEME="powerlevel10k/powerlevel10k" in ~/.zshrc.
+# exec zsh
+# p10k configure
 ```
 
-5. Nano
+5. [Nano](https://www.nano-editor.org/) configuration.
 
 ```bash
 # Nano is a text editor for Unix-like operating systems.

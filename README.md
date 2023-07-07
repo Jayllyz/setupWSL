@@ -1,4 +1,4 @@
-<h1 align="center"> WSL Setup</h1>
+*Dernière mise à jour : 07/07/2023*
 
 ## Table of Contents
 
@@ -12,7 +12,7 @@
 
 ## What is WSL? :thinking:
 
-The Windows Subsystem for Linux (WSL) is a feature of Windows that allows you to run native Linux command-line tools directly on Windows. It provides a Linux-compatible kernel interface developed by Microsoft, which allows you to use a wide range of Linux applications on Windows. With WSL, you can run shell scripts, install and use Linux command-line utilities, and even create and run your own custom scripts.
+The Windows Subsystem for Linux (WSL) is a feature of Windows that allows you to run native Linux command-line tools directly on Windows. It provides a Linux-compatible kernel interface developed by Microsoft, which allows you to use Linux applications on Windows.
 
 WSL is different from a traditional virtual machine in that it allows you to run Linux applications directly on the Windows kernel. This means that you can use Linux tools and utilities at the same level of performance as if they were running on a native Linux system.
 
@@ -130,7 +130,8 @@ sudo apt install git -y
 ```
 
 3. Install [Docker Desktop](https://docs.docker.com/desktop/wsl/).
-> Docker Desktop uses the dynamic memory allocation feature in WSL 2 to improve the resource consumption.
+
+   > Docker Desktop uses the dynamic memory allocation feature in WSL 2 to improve the resource consumption.
 
 4. Install Node and NPM (or [pnpm](https://pnpm.io/installation)).
 
@@ -139,7 +140,7 @@ sudo apt install git -y
 sudo apt install nodejs npm -y
 ```
 
-5. Update and upgrade.
+5. Update and upgrade package list.
 
 ```bash
 # Update and upgrade everything

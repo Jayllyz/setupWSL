@@ -1,4 +1,4 @@
-*Dernière mise à jour : 07/07/2023*
+*Last update : 07/07/2023*
 
 ## Table of Contents
 

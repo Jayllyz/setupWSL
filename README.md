@@ -134,10 +134,12 @@ sudo apt install git -y
    > Docker Desktop uses the dynamic memory allocation feature in WSL 2 to improve the resource consumption.
 
 4. Install Node and NPM (or [pnpm](https://pnpm.io/installation)).
+    > :information_source: Best way to install it is using nvm, you can follow this [gist](https://gist.github.com/d2s/372b5943bce17b964a79).
 
 ```bash
 # Node and NPM
-sudo apt install nodejs npm -y
+curl -fsSL https://deb.nodesource.com/setup_lts.x | sudo -E bash - &&\
+sudo apt-get install -y nodejs npm
 ```
 
 5. Update and upgrade package list.

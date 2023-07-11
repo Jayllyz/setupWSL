@@ -50,12 +50,12 @@ wsl --install
 
 ### Better terminal with Zsh
 
-1. Install [ZSH](https://zsh.sourceforge.io/).
+1. Install [ZSH](https://zsh.sourceforge.io/) & [cURL](https://curl.se/).
 
 ```bash
 # Zsh is a shell designed for interactive use, you can have plugins, themes, etc.
 sudo apt update
-sudo apt install zsh -y
+sudo apt install zsh curl -y
 ```
 
 2. Install [Oh My Zsh](https://ohmyz.sh/).

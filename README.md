@@ -54,6 +54,7 @@ wsl --install
 
 ```bash
 # Zsh is a shell designed for interactive use, you can have plugins, themes, etc.
+sudo apt update
 sudo apt install zsh -y
 ```
 

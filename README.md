@@ -76,15 +76,19 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:
 ```
 
 4. Install [Powerlevel10k](https://github.com/romkatv/powerlevel10k), if you want to use another theme, you can find more themes [here](https://github.com/ohmyzsh/ohmyzsh/wiki/Themes).
+   
+   > ⚠️ This theme require specific fonts, you can check here how to install [them](https://github.com/romkatv/powerlevel10k#meslo-nerd-font-patched-for-powerlevel10k).
 
 ```bash
 # Powerlevel10k
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/powerlevel10k
 echo 'source ~/powerlevel10k/powerlevel10k.zsh-theme' >>~/.zshrc
-# Set ZSH_THEME="powerlevel10k/powerlevel10k" in ~/.zshrc.
-# exec zsh
-# p10k configure
 ```
+- Set ```ZSH_THEME="powerlevel10k/powerlevel10k"``` in ~/.zshrc.
+
+- Restart Zsh with ```exec zsh```
+
+- Type ```p10k configure``` if the configuration wizard doesn't start automatically.
 
 5. [Nano](https://www.nano-editor.org/) configuration.
 

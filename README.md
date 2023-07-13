@@ -74,8 +74,9 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:
 ```
 Then add the following line to your ~/.zshrc file :
 
-`plugins=(git sudo docker npm vscode zsh-autosuggestions zsh-syntax-highlighting)`
-
+```bash
+plugins=(git sudo docker npm vscode zsh-autosuggestions zsh-syntax-highlighting)
+```
 
 4. *(optional)* Install [Powerlevel10k](https://github.com/romkatv/powerlevel10k), if you want to use another theme, you can find more themes [here](https://github.com/ohmyzsh/ohmyzsh/wiki/Themes).
    
@@ -94,9 +95,6 @@ echo 'source ~/powerlevel10k/powerlevel10k.zsh-theme' >>~/.zshrc
 5. [Nano](https://www.nano-editor.org/) configuration.
 
 ```bash
-# Nano is a text editor for Unix-like operating systems.
-sudo apt install nano -y
-
 nano ~/.nanorc
 
 # Add this in the file :
@@ -124,14 +122,18 @@ bind ^S savefile main # CTRL+S - Save
 ### Basic installation
 
 1. Install build essential.
-
-- `sudo apt install build-essential -y`
+   
+```bash
+sudo apt install build-essential -y
+```
 
 2. Install Git.
-
-- `sudo apt install git -y`
-- `git config --global user.email 'your email'`.
-- `git config --global user.name 'your name'`.
+   
+```bash
+sudo apt install git -y
+git config --global user.email 'your email'
+git config --global user.name 'your name'
+```
 
 3. Install [Docker Desktop](https://docs.docker.com/desktop/wsl/).
 
@@ -147,7 +149,9 @@ sudo apt-get install -y nodejs npm
 
 5. Update, upgrade and clean package list.
 
-- `sudo apt update && sudo apt upgrade -y && sudo apt autoremove`
+```bash
+sudo apt update && sudo apt upgrade -y && sudo apt autoremove
+```
 
 You are now ready to start developing on WSL! :tada:
 

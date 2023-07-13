@@ -78,7 +78,7 @@ Then add the following line to your ~/.zshrc file :
 `plugins=(git sudo docker npm vscode zsh-autosuggestions zsh-syntax-highlighting)`
 
 
-4. (optionnal) Install [Powerlevel10k](https://github.com/romkatv/powerlevel10k), if you want to use another theme, you can find more themes [here](https://github.com/ohmyzsh/ohmyzsh/wiki/Themes).
+4. *(optional)* Install [Powerlevel10k](https://github.com/romkatv/powerlevel10k), if you want to use another theme, you can find more themes [here](https://github.com/ohmyzsh/ohmyzsh/wiki/Themes).
    
    > ⚠️ This theme require specific fonts, you can check here how to install [them](https://github.com/romkatv/powerlevel10k#meslo-nerd-font-patched-for-powerlevel10k).
 

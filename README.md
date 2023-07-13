@@ -22,9 +22,9 @@ learn more [here](https://learn.microsoft.com/en-us/windows/wsl/about). :book:
 
 1. Open PowerShell as Administrator and run:
 
+- Default distribution is Ubuntu if you want another one use : `wsl --install -d <Distribution name>`
+- To see all available distribution use : `wsl --list --online`
 ```powershell
-# Default distribution is Ubuntu if you want another one use : wsl --install -d <Distribution name>
-# To see all available distribution use : wsl --list --online
 wsl --install
 ```
   > ℹ️ Later you can update wsl in Microsoft store or by using `wsl --update` in powershell/cmd.
@@ -69,7 +69,6 @@ sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.
 3. Install Zsh plugins, you can find more plugins [here](https://github.com/ohmyzsh/ohmyzsh/wiki/Plugins).
 
 ```bash
-# Zsh plugins
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 ```

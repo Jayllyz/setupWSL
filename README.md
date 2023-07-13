@@ -146,9 +146,9 @@ curl -fsSL https://deb.nodesource.com/setup_lts.x | sudo -E bash - &&\
 sudo apt-get install -y nodejs npm
 ```
 
-5. Update and upgrade package list.
+5. Update, upgrade and clean package list.
 
-- `sudo apt update && sudo apt upgrade -y`
+- `sudo apt update && sudo apt upgrade -y && sudo apt autoremove`
 
 You are now ready to start developing on WSL! :tada:
 

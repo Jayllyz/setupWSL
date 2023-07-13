@@ -24,9 +24,10 @@ learn more [here](https://learn.microsoft.com/en-us/windows/wsl/about). :book:
 
 ```powershell
 # Default distribution is Ubuntu if you want another one use : wsl --install -d <Distribution name>
-# To see all available distribution use : wsl --list -online
+# To see all available distribution use : wsl --list --online
 wsl --install
 ```
+  > ℹ️ Later you can update wsl in Microsoft store or by using `wsl --update` in powershell/cmd.
 
 2. Restart your computer.
 
@@ -54,7 +55,7 @@ wsl --install
 
 ```bash
 # Zsh is a shell designed for interactive use, you can have plugins, themes, etc.
-sudo apt update
+sudo apt update && sudo apt upgrade -y
 sudo apt install zsh curl -y
 ```
 
@@ -71,24 +72,25 @@ sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.
 # Zsh plugins
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
-# Add the following line to your ~/.zshrc file:
-# plugins=(git sudo docker npm vscode zsh-autosuggestions zsh-syntax-highlighting)
 ```
+Then add the following line to your ~/.zshrc file :
 
-4. Install [Powerlevel10k](https://github.com/romkatv/powerlevel10k), if you want to use another theme, you can find more themes [here](https://github.com/ohmyzsh/ohmyzsh/wiki/Themes).
+`plugins=(git sudo docker npm vscode zsh-autosuggestions zsh-syntax-highlighting)`
+
+
+4. (optionnal) Install [Powerlevel10k](https://github.com/romkatv/powerlevel10k), if you want to use another theme, you can find more themes [here](https://github.com/ohmyzsh/ohmyzsh/wiki/Themes).
    
    > ⚠️ This theme require specific fonts, you can check here how to install [them](https://github.com/romkatv/powerlevel10k#meslo-nerd-font-patched-for-powerlevel10k).
 
 ```bash
-# Powerlevel10k
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/powerlevel10k
 echo 'source ~/powerlevel10k/powerlevel10k.zsh-theme' >>~/.zshrc
 ```
-- Set ```ZSH_THEME="powerlevel10k/powerlevel10k"``` in ~/.zshrc.
+- Set `ZSH_THEME="powerlevel10k/powerlevel10k"` in ~/.zshrc.
 
-- Restart Zsh with ```exec zsh```
+- Restart Zsh with `exec zsh`
 
-- Type ```p10k configure``` if the configuration wizard doesn't start automatically.
+- Type `p10k configure` if the configuration wizard doesn't start automatically.
 
 5. [Nano](https://www.nano-editor.org/) configuration.
 
@@ -97,8 +99,8 @@ echo 'source ~/powerlevel10k/powerlevel10k.zsh-theme' >>~/.zshrc
 sudo apt install nano -y
 
 nano ~/.nanorc
-# Put this in the file:
 
+# Add this in the file :
 set atblanks
 set mouse
 set cutfromcursor
@@ -124,15 +126,13 @@ bind ^S savefile main # CTRL+S - Save
 
 1. Install build essential.
 
-```bash
-sudo apt install build-essential -y
-```
+- `sudo apt install build-essential -y`
 
 2. Install Git.
 
-```bash
-sudo apt install git -y
-```
+- `sudo apt install git -y`
+- `git config --global user.email 'your email'`.
+- `git config --global user.name 'your name'`.
 
 3. Install [Docker Desktop](https://docs.docker.com/desktop/wsl/).
 
@@ -142,17 +142,13 @@ sudo apt install git -y
     > :information_source: Best way to install it is using nvm, you can follow this [gist](https://gist.github.com/d2s/372b5943bce17b964a79).
 
 ```bash
-# Node and NPM
 curl -fsSL https://deb.nodesource.com/setup_lts.x | sudo -E bash - &&\
 sudo apt-get install -y nodejs npm
 ```
 
 5. Update and upgrade package list.
 
-```bash
-# Update and upgrade everything
-sudo apt update && sudo apt upgrade -y
-```
+- `sudo apt update && sudo apt upgrade -y`
 
 You are now ready to start developing on WSL! :tada:
 

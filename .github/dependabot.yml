@@ -1,3 +1,4 @@
+---
 version: 2
 updates:
   - package-ecosystem: "github-actions"
@@ -11,3 +12,4 @@ updates:
         update-types:
           - patch
           - minor
+...

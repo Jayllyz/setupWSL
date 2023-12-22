@@ -144,7 +144,7 @@ learn more [here](https://learn.microsoft.com/en-us/windows/wsl/about). :book:
 
    > Docker Desktop uses the dynamic memory allocation feature in WSL 2 to improve the resource consumption.
 
-4. Install Node and NPM (or [pnpm](https://pnpm.io/installation)).
+4. Install Node and npm (or [pnpm](https://pnpm.io/installation)).
     > :information_source: Best way to install it is using nvm, you can follow this [gist](https://gist.github.com/d2s/372b5943bce17b964a79).
 
    ```bash

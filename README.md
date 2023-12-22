@@ -1,14 +1,15 @@
-*Last update : 07/13/2023*
+# setupWSL
 
-## Table of Contents
+![GitHub last commit (by committer)](https://img.shields.io/github/last-commit/jayllyz/setupWSL)
+[![Super-Linter](https://github.com/jayllyz/setupWSL/actions/workflows/lint.yml/badge.svg)](https://github.com/marketplace/actions/super-linter)
 
-- [Table of Contents](#table-of-contents)
-- [What is WSL? :thinking:](#what-is-wsl-thinking)
-- [Installation :computer:](#installation-computer)
-- [Configuration :wrench:](#configuration-wrench)
-  - [Windows Terminal](#windows-terminal)
-  - [Better terminal with Zsh](#better-terminal-with-zsh)
-  - [Basic installation](#basic-installation)
+- [setupWSL](#setupwsl)
+  - [What is WSL? :thinking:](#what-is-wsl-thinking)
+  - [Installation :computer:](#installation-computer)
+  - [Configuration :wrench:](#configuration-wrench)
+    - [Windows Terminal](#windows-terminal)
+    - [Better terminal with Zsh](#better-terminal-with-zsh)
+    - [Basic installation](#basic-installation)
 
 ## What is WSL? :thinking:
 
@@ -22,12 +23,14 @@ learn more [here](https://learn.microsoft.com/en-us/windows/wsl/about). :book:
 
 1. Open PowerShell as Administrator and run:
 
-- Default distribution is Ubuntu if you want another one use : `wsl --install -d <Distribution name>`
-- To see all available distribution use : `wsl --list --online`
-```powershell
-wsl --install
-```
-  > ℹ️ Later you can update wsl in Microsoft store or by using `wsl --update` in powershell/cmd.
+   - Default distribution is Ubuntu if you want another one use : `wsl --install -d <Distribution name>`
+   - To see all available distribution use : `wsl --list --online`
+
+   ```powershell
+   wsl --install
+   ```
+
+     > ℹ️ Later you can update wsl in Microsoft store or by using `wsl --update` in powershell/cmd.
 
 2. Restart your computer.
 
@@ -53,87 +56,89 @@ wsl --install
 
 1. Install [ZSH](https://zsh.sourceforge.io/) & [cURL](https://curl.se/).
 
-```bash
-# Zsh is a shell designed for interactive use, you can have plugins, themes, etc.
-sudo apt update && sudo apt upgrade -y
-sudo apt install zsh curl -y
-```
+   ```bash
+   # Zsh is a shell designed for interactive use, you can have plugins, themes, etc.
+   sudo apt update && sudo apt upgrade -y
+   sudo apt install zsh curl -y
+   ```
 
 2. Install [Oh My Zsh](https://ohmyz.sh/).
 
-```bash
-# Oh My Zsh is an open source, community-driven framework for managing your Zsh configuration.
-sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-```
+   ```bash
+   # Oh My Zsh is an open source, community-driven framework for managing your Zsh configuration.
+   sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+   ```
 
 3. Install Zsh plugins, you can find more plugins [here](https://github.com/ohmyzsh/ohmyzsh/wiki/Plugins).
 
-```bash
-git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
-git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
-```
-Then add the following line to your ~/.zshrc file :
+   ```bash
+   git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+   git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+   ```
 
-```bash
-plugins=(git sudo docker npm vscode zsh-autosuggestions zsh-syntax-highlighting)
-```
+   Then add the following line to your ~/.zshrc file :
+
+   ```bash
+   plugins=(git sudo docker npm vscode zsh-autosuggestions zsh-syntax-highlighting)
+   ```
 
 4. *(optional)* Install [Powerlevel10k](https://github.com/romkatv/powerlevel10k), if you want to use another theme, you can find more themes [here](https://github.com/ohmyzsh/ohmyzsh/wiki/Themes).
-   
+
    > ⚠️ This theme require specific fonts, you can check here how to install [them](https://github.com/romkatv/powerlevel10k#meslo-nerd-font-patched-for-powerlevel10k).
 
-```bash
-git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/powerlevel10k
-echo 'source ~/powerlevel10k/powerlevel10k.zsh-theme' >>~/.zshrc
-```
-- Set `ZSH_THEME="powerlevel10k/powerlevel10k"` in ~/.zshrc.
+   ```bash
+   git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/powerlevel10k
+   echo 'source ~/powerlevel10k/powerlevel10k.zsh-theme' >>~/.zshrc
+   ```
 
-- Restart Zsh with `exec zsh`
+   - Set `ZSH_THEME="powerlevel10k/powerlevel10k"` in ~/.zshrc.
 
-- Type `p10k configure` if the configuration wizard doesn't start automatically.
+   - Restart Zsh with `exec zsh`
+
+   - Type `p10k configure` if the configuration wizard doesn't start automatically.
 
 5. [Nano](https://www.nano-editor.org/) configuration.
 
-```bash
-nano ~/.nanorc
+   ```bash
+   nano ~/.nanorc
 
-# Add this in the file :
-set atblanks
-set mouse
-set cutfromcursor
-set softwrap
-set suspend
-set tabsize 4
-set tabstospaces
-include "/usr/share/nano/*.nanorc"
-set speller "aspell -x -c"
-set constantshow
-set linenumbers
-set casesensitive
-set historylog
-set positionlog
-set zap
-set autoindent
-bind ^C copy main # CTRC+C - Copy
-bind ^V paste all # CTRL+V - Past
-bind ^S savefile main # CTRL+S - Save
-```
+   # Add this in the file :
+   set atblanks
+   set mouse
+   set cutfromcursor
+   set softwrap
+   set suspend
+   set tabsize 4
+   set tabstospaces
+   include "/usr/share/nano/*.nanorc"
+   set speller "aspell -x -c"
+   set constantshow
+   set linenumbers
+   set casesensitive
+   set historylog
+   set positionlog
+   set zap
+   set autoindent
+   bind ^C copy main # CTRC+C - Copy
+   bind ^V paste all # CTRL+V - Past
+   bind ^S savefile main # CTRL+S - Save
+   ```
 
 ### Basic installation
 
 1. Install build essential.
-   
-```bash
-sudo apt install build-essential -y
-```
+
+   ```bash
+   sudo apt install build-essential -y
+   ```
 
 2. Install Git.
-   
-```bash
-sudo apt install git -y
-git config --global user.email 'your email'
-git config --global user.name 'your name'
-```
+
+   ```bash
+   sudo apt install git -y
+   git config --global user.email 'your email'
+   git config --global user.name 'your name'
+   ```
 
 3. Install [Docker Desktop](https://docs.docker.com/desktop/wsl/).
 
@@ -142,16 +147,16 @@ git config --global user.name 'your name'
 4. Install Node and NPM (or [pnpm](https://pnpm.io/installation)).
     > :information_source: Best way to install it is using nvm, you can follow this [gist](https://gist.github.com/d2s/372b5943bce17b964a79).
 
-```bash
-curl -fsSL https://deb.nodesource.com/setup_lts.x | sudo -E bash - &&\
-sudo apt-get install -y nodejs npm
-```
+   ```bash
+   curl -fsSL https://deb.nodesource.com/setup_lts.x | sudo -E bash - &&\
+   sudo apt-get install -y nodejs npm
+   ```
 
 5. Update, upgrade and clean package list.
 
-```bash
-sudo apt update && sudo apt upgrade -y && sudo apt autoremove
-```
+   ```bash
+   sudo apt update && sudo apt upgrade -y && sudo apt autoremove
+   ```
 
 You are now ready to start developing on WSL! :tada:
 

@@ -93,7 +93,7 @@ alias df='duf'                                                          # df
 alias duf='duf -h -a --si'                                              # duf
 ```
 
-### [nala]()
+### [nala](https://github.com/volitank/nala)
 
 Nala is a modern replacement for apt, it adds more features and a better UI.
 > [!NOTE]

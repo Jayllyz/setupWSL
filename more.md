@@ -19,9 +19,7 @@ You can add theses aliases in your `~/.zshrc` file :
 ```bash
 # bat
 alias cat='batcat --style="header" --paging=never'
-
 alias catn='batcat --pager "less -RF"'
-
 alias batn='batcat --pager "less -RF"'
 ```
 
@@ -95,6 +93,18 @@ alias df='duf'                                                          # df
 alias duf='duf -h -a --si'                                              # duf
 ```
 
+### [nala]()
+
+Nala is a modern replacement for apt, it adds more features and a better UI.
+> [!NOTE]
+> Outside of pretty formatting, the number 1 reason to use Nala over apt is parallel downloads.
+
+```bash
+sudo apt install nala -y
+```
+
+Good video about [nala](https://youtu.be/oroSkR4Nn_w?si=uk__FOcTip7LX9xh).
+
 ## More useful aliases
 
 You can add theses aliases in your `~/.zshrc` file :
@@ -106,6 +116,8 @@ alias ...='cd ../..'
 
 # update
 alias update='sudo apt update && sudo apt upgrade -y && sudo apt autoremove -y'
+# if you use nala
+alias update='nala update && nala upgrade -y'
 
 # network
 alias ip='curl -s https://ipinfo.io/ip'
@@ -116,6 +128,5 @@ alias zshrc='nano ~/.zshrc'
 
 # git
 alias gs='git status'
-
 alias ga='git add .'
 ```

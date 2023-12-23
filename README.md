@@ -9,7 +9,7 @@
   - [Configuration :wrench:](#configuration-wrench)
     - [Windows Terminal](#windows-terminal)
     - [Better terminal with Zsh](#better-terminal-with-zsh)
-    - [Basic installation](#basic-installation)
+    - [Configuration](#configuration)
 
 ## What is WSL? :thinking:
 
@@ -98,6 +98,7 @@ learn more [here](https://learn.microsoft.com/en-us/windows/wsl/about). :book:
    - Type `p10k configure` if the configuration wizard doesn't start automatically.
 
 5. [Nano](https://www.nano-editor.org/) configuration.
+   > Configuring Nano is optional, you can use another editor like Vim, Emacs, if you prefer.
 
    ```bash
    nano ~/.nanorc
@@ -107,7 +108,6 @@ learn more [here](https://learn.microsoft.com/en-us/windows/wsl/about). :book:
    set mouse
    set cutfromcursor
    set softwrap
-   set suspend
    set tabsize 4
    set tabstospaces
    include "/usr/share/nano/*.nanorc"
@@ -117,6 +117,7 @@ learn more [here](https://learn.microsoft.com/en-us/windows/wsl/about). :book:
    set casesensitive
    set historylog
    set positionlog
+   set smarthome
    set zap
    set autoindent
    bind ^C copy main # CTRC+C - Copy
@@ -124,7 +125,7 @@ learn more [here](https://learn.microsoft.com/en-us/windows/wsl/about). :book:
    bind ^S savefile main # CTRL+S - Save
    ```
 
-### Basic installation
+### Configuration
 
 1. Install build essential.
 
@@ -145,6 +146,7 @@ learn more [here](https://learn.microsoft.com/en-us/windows/wsl/about). :book:
    > Docker Desktop uses the dynamic memory allocation feature in WSL 2 to improve the resource consumption.
 
 4. Install Node and npm (or [pnpm](https://pnpm.io/installation)).
+    > [!NOTE]
     > :information_source: Best way to install it is using nvm, you can follow this [gist](https://gist.github.com/d2s/372b5943bce17b964a79).
 
    ```bash
@@ -157,6 +159,8 @@ learn more [here](https://learn.microsoft.com/en-us/windows/wsl/about). :book:
    ```bash
    sudo apt update && sudo apt upgrade -y && sudo apt autoremove
    ```
+
+If you want more useful tools, you can continue [here](more.md).
 
 You are now ready to start developing on WSL! :tada:
 

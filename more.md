@@ -59,22 +59,22 @@ alias btop="btop --utf-force"
 alias htop="btop --utf-force"
 ```
 
-### [exa](https://github.com/ogham/exa)
+### [eza](https://github.com/eza-community/eza)
 
 exa is a modern replacement for `ls`, it adds more features and a better UI.
 
 ```bash
-sudo apt install exa -y
+sudo apt install eza -y
 ```
 
 You can add theses aliases in your `~/.zshrc` file :
 
 ```bash
 # exa
-alias ls='exa -a --icons'                                               # ls
-alias l='exa -lbF --git'                                                # list, size, type, git
-alias ll="exa -1a --icons"                                              # list, 1 per line
-alias lat="exa -lagh --tree --icons"                                    # list with info and tree
+alias ls='eza -a --icons'                                               # ls
+alias l='eza -lbF --git'                                                # list, size, type, git
+alias ll="eza -1a --icons"                                              # list, 1 per line
+alias lat="eza -lagh --tree --icons"                                    # list with info and tree
 ```
 
 ### [duf](https://github.com/muesli/duf)

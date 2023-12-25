@@ -93,6 +93,9 @@ alias df='duf'                                                          # df
 alias duf='duf -h -a --si'                                              # duf
 ```
 
+> [!NOTE]
+> You might need to do `unalias duf` before using the `duf` alias since it's already an alias by default.
+
 ### [nala](https://github.com/volitank/nala)
 
 Nala is a modern replacement for apt, it adds more features and a better UI.

@@ -54,6 +54,7 @@ sudo apt install btop -y
 You can add theses aliases in your `~/.zshrc` file :
 
 ```bash
+# btop
 alias top="btop --utf-force"
 alias btop="btop --utf-force"
 alias htop="btop --utf-force"
@@ -61,7 +62,7 @@ alias htop="btop --utf-force"
 
 ### [eza](https://github.com/eza-community/eza)
 
-exa is a modern replacement for `ls`, it adds more features and a better UI.
+eza is a modern replacement for `ls`, it adds more features and a better UI.
 
 ```bash
 sudo apt install eza -y
@@ -70,7 +71,7 @@ sudo apt install eza -y
 You can add theses aliases in your `~/.zshrc` file :
 
 ```bash
-# exa
+# eza
 alias ls='eza -a --icons'                                               # ls
 alias l='eza -lbF --git'                                                # list, size, type, git
 alias ll="eza -1a --icons"                                              # list, 1 per line

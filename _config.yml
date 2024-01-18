@@ -3,6 +3,7 @@ plugins:
   - jekyll-remote-theme
   - jemoji
   - jekyll-include-cache
+  - kramdown-parser-gfm
 
 theme: jekyll-theme-cayman
 ...

@@ -6,4 +6,5 @@ plugins:
   - kramdown-parser-gfm
 
 theme: jekyll-theme-cayman
+markdown: GFM
 ...

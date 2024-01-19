@@ -133,4 +133,16 @@ alias zshrc='nano ~/.zshrc'
 # git
 alias gs='git status'
 alias ga='git add .'
+
+# wheather
+alias wheather='curl wttr.in'
 ```
+
+## Ressources
+
+- [Linux-Bash-Commands](https://github.com/trinib/Linux-Bash-Commands) - A list of useful Linux Bash commands.
+- [awesome-zsh-plugins](https://github.com/unixorn/awesome-zsh-plugins) - A collection of ZSH frameworks, plugins & themes.
+- [cheat.sh](https://github.com/chubin/cheat.sh) - The only cheat sheet you need.
+- [awesome-console-services](https://github.com/chubin/awesome-console-services) - List of useful console services. (inactive but still useful)
+
+Thank you for reading this part of the guide, I hope you found it useful and feel to contribute to this guide by creating a pull request. :smile: 👍

@@ -10,12 +10,14 @@
     - [Windows Terminal](#windows-terminal)
     - [Better terminal with Zsh](#better-terminal-with-zsh)
     - [Configuration](#configuration)
+  - [Useful tools](#useful-tools)
+  - [Thank you for reading! :sparkles:](#thank-you-for-reading-sparkles)
 
 ## What is WSL? :thinking:
 
 The Windows Subsystem for Linux (WSL) is a feature of Windows that allows you to run native Linux command-line tools directly on Windows. It provides a Linux-compatible kernel interface developed by Microsoft, which allows you to use Linux applications on Windows.
 
-WSL is different from a traditional virtual machine in that it allows you to run Linux applications directly on the Windows kernel. This means that you can use Linux tools and utilities at the same level of performance as if they were running on a native Linux system.
+This means that you can use Linux tools and utilities at the same level of performance as if they were running on a native Linux system, which is way better than using a virtual machine.
 
 learn more [here](https://learn.microsoft.com/en-us/windows/wsl/about). :book:
 
@@ -159,10 +161,16 @@ learn more [here](https://learn.microsoft.com/en-us/windows/wsl/about). :book:
    sudo apt update && sudo apt upgrade -y && sudo apt autoremove
    ```
 
-If you want more useful tools, you can continue [here](more.md).
+## Useful tools
+
+There are tons of useful tools you can install to enhance your experience on Linux and so on WSL, you can continue [here](more.md).
+
+Microsoft has also created a guide to help you benefit from WSL if you use VS Code, you can find it [here](https://docs.microsoft.com/en-us/windows/wsl/tutorials/wsl-vscode).
+
+## Thank you for reading! :sparkles:
+
+**[`^ back to top ^`](#setupwsl)**
 
 You are now ready to start developing on WSL! :tada:
-
-If your favorite IDE is VSCode, you can find a tutorial [here](https://code.visualstudio.com/docs/remote/wsl).
 
 Made with :heart: by [@Jayllyz](https://github.com/Jayllyz)

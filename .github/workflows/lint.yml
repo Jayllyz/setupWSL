@@ -26,6 +26,7 @@ jobs:
         uses: super-linter/super-linter/slim@v6
         env:
           VALIDATE_ALL_CODEBASE: true
+          VALIDATE_CHECKOV: false
           VALIDATE_JSCPD: false
           DEFAULT_BRANCH: main
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

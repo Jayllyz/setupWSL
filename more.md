@@ -145,4 +145,4 @@ alias wheather='curl wttr.in'
 - [cheat.sh](https://github.com/chubin/cheat.sh) - The only cheat sheet you need.
 - [awesome-console-services](https://github.com/chubin/awesome-console-services) - List of useful console services. (inactive but still useful)
 
-Thank you for reading this part of the guide, I hope you found it useful and feel to contribute to this guide by creating a pull request. :smile: 👍
+Thank you for reading this part of the guide, I hope you found it useful and feel free to contribute to this guide by creating a pull request. :smile: 👍

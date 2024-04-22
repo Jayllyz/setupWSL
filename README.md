@@ -163,13 +163,12 @@ learn more [here](https://learn.microsoft.com/en-us/windows/wsl/about). :book:
    ```
 
 ## Useful Tools
-
-There are numerous useful tools you can install to enhance your experience on Linux and WSL. You can find more information [here](more.md).
-
-Microsoft has also created a guide to help you maximize the benefits of WSL if you use VS Code. You can access it [here](https://docs.microsoft.com/en-us/windows/wsl/tutorials/wsl-vscode).
+> [!NOTE]
+> There are numerous useful tools you can install to enhance your experience on Linux and WSL [link](more.md). <br>
+> Microsoft has also created a guide to help you maximize the benefits of WSL if you use VS Code [link](https://docs.microsoft.com/en-us/windows/wsl/tutorials/wsl-vscode).
 
 > [!IMPORTANT]  
-> When working with WSL, always clone or create your projects inside the Linux file system. Performance may significantly decrease, and certain features might not work properly (e.g: hot reloading).<br>
+> When working with WSL, always clone or create your projects inside the Linux file system, <br> performance may significantly decrease, and certain features might not work properly (e.g: hot reloading).<br>
 > For more information, refer to the [Docker best practices documentation](https://docs.docker.com/desktop/wsl/best-practices/).
 
 ## Thank you for reading! :sparkles:

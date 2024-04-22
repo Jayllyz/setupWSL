@@ -10,7 +10,7 @@
     - [Windows Terminal](#windows-terminal)
     - [Better terminal with Zsh](#better-terminal-with-zsh)
     - [Configuration](#configuration)
-  - [Useful tools](#useful-tools)
+  - [Useful tools & Informations](#useful-tools-and-informations)
   - [Thank you for reading! :sparkles:](#thank-you-for-reading-sparkles)
 
 ## What is WSL? :thinking:
@@ -162,14 +162,13 @@ learn more [here](https://learn.microsoft.com/en-us/windows/wsl/about). :book:
    sudo apt update && sudo apt upgrade -y && sudo apt autoremove
    ```
 
-## Useful Tools
+## Useful Tools and Informations
 
 > [!NOTE]
 > There are numerous useful tools you can install to enhance your experience on Linux and WSL [link](more.md). <br>
-> Microsoft has also created a guide to help you maximize the benefits of WSL if you use VS Code [link](https://docs.microsoft.com/en-us/windows/wsl/tutorials/wsl-vscode).
-
-> [!IMPORTANT]  
-> When working with WSL, always clone or create your projects inside the Linux file system, <br> performance may significantly decrease, and certain features might not work properly (e.g: hot reloading).<br>
+> Microsoft has also created a guide to help you maximize the benefits of WSL if you use VS Code [link](https://docs.microsoft.com/en-us/windows/wsl/tutorials/wsl-vscode). <br>
+>
+> When working with WSL, always clone or create your projects inside the Linux file system, <br> otherwise performance may significantly decrease, and certain features might not work properly (e.g: hot reloading).<br>
 > For more information, refer to the [Docker best practices documentation](https://docs.docker.com/desktop/wsl/best-practices/).
 
 ## Thank you for reading! :sparkles:

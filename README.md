@@ -143,11 +143,12 @@ learn more [here](https://learn.microsoft.com/en-us/windows/wsl/about). :book:
    git config --global user.name 'your name'
    ```
 
-3. Install [Docker Desktop](https://docs.docker.com/desktop/wsl/).
+3. Install [Docker Desktop](https://docs.docker.com/desktop/wsl/)
 
-   > Docker Desktop uses the dynamic memory allocation feature in WSL 2 to improve the resource consumption.
+   > Docker Desktop uses the dynamic memory allocation feature in WSL 2 to optimize resource consumption.<br>
+   > For more information, refer to the [Working with Docker & WSL documentation](https://docs.docker.com/desktop/wsl/).
 
-4. Install Node and npm (or [pnpm](https://pnpm.io/installation)).
+5. Install Node and npm (or [pnpm](https://pnpm.io/installation)).
    > :information_source: Best way to install it is using nvm, you can follow this [gist](https://gist.github.com/d2s/372b5943bce17b964a79).
 
    ```bash
@@ -155,17 +156,21 @@ learn more [here](https://learn.microsoft.com/en-us/windows/wsl/about). :book:
    sudo apt-get install -y nodejs npm
    ```
 
-5. Update, upgrade and clean package list.
+6. Update, upgrade and clean package list.
 
    ```bash
    sudo apt update && sudo apt upgrade -y && sudo apt autoremove
    ```
 
-## Useful tools
+## Useful Tools
 
-There are tons of useful tools you can install to enhance your experience on Linux and so on WSL, you can continue [here](more.md).
+There are numerous useful tools you can install to enhance your experience on Linux and WSL. You can find more information [here](more.md).
 
-Microsoft has also created a guide to help you benefit from WSL if you use VS Code, you can find it [here](https://docs.microsoft.com/en-us/windows/wsl/tutorials/wsl-vscode).
+Microsoft has also created a guide to help you maximize the benefits of WSL if you use VS Code. You can access it [here](https://docs.microsoft.com/en-us/windows/wsl/tutorials/wsl-vscode).
+
+> [!IMPORTANT]  
+> When working with WSL, always clone or create your projects inside the Linux file system. Performance may significantly decrease, and certain features might not work properly (e.g: hot reloading).<br>
+> For more information, refer to the [Docker best practices documentation](https://docs.docker.com/desktop/wsl/best-practices/).
 
 ## Thank you for reading! :sparkles:
 

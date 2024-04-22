@@ -163,6 +163,7 @@ learn more [here](https://learn.microsoft.com/en-us/windows/wsl/about). :book:
    ```
 
 ## Useful Tools
+
 > [!NOTE]
 > There are numerous useful tools you can install to enhance your experience on Linux and WSL [link](more.md). <br>
 > Microsoft has also created a guide to help you maximize the benefits of WSL if you use VS Code [link](https://docs.microsoft.com/en-us/windows/wsl/tutorials/wsl-vscode).

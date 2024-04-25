@@ -145,7 +145,6 @@ learn more [here](https://learn.microsoft.com/en-us/windows/wsl/about). :book:
 
 3. Install [Docker Desktop](https://docs.docker.com/desktop/wsl/)
 
-   > [!NOTE]
    > Docker Desktop uses the dynamic memory allocation feature in WSL 2 to optimize resource consumption.<br>
    > For more information, refer to the [Working with Docker & WSL documentation](https://docs.docker.com/desktop/wsl/).
 

@@ -10,7 +10,7 @@
     - [Windows Terminal](#windows-terminal)
     - [Better terminal with Zsh](#better-terminal-with-zsh)
     - [Configuration](#configuration)
-  - [Useful tools & Informations](#useful-tools-and-informations)
+  - [Useful Tools and Informations](#useful-tools-and-informations)
   - [Thank you for reading! :sparkles:](#thank-you-for-reading-sparkles)
 
 ## What is WSL? :thinking:
@@ -145,18 +145,31 @@ learn more [here](https://learn.microsoft.com/en-us/windows/wsl/about). :book:
 
 3. Install [Docker Desktop](https://docs.docker.com/desktop/wsl/)
 
+   > [!NOTE]
    > Docker Desktop uses the dynamic memory allocation feature in WSL 2 to optimize resource consumption.<br>
    > For more information, refer to the [Working with Docker & WSL documentation](https://docs.docker.com/desktop/wsl/).
 
-5. Install Node and npm (or [pnpm](https://pnpm.io/installation)).
-   > :information_source: Best way to install it is using nvm, you can follow this [gist](https://gist.github.com/d2s/372b5943bce17b964a79).
+4. Tool versioning.
+
+   > Managing version of tools is usefull for development, my favorite tool for this is [proto](https://moonrepo.dev/proto) <br>
+   > Why proto ? Because it's one tool to rule them all and it's made in Rust. ⚡
 
    ```bash
-   curl -fsSL https://deb.nodesource.com/setup_lts.x | sudo -E bash - &&\
-   sudo apt-get install -y nodejs npm
+   # Requirements
+   sudo apt install unzip gzip xz-utils -y
+
+   curl -fsSL https://moonrepo.dev/install/proto.sh | bash
+
+   proto setup
+
+   # Install what you need :
+   proto install node lts
+   proto install python 
    ```
 
-6. Update, upgrade and clean package list.
+   You can find more information about proto [here](https://moonrepo.dev/proto).
+
+5. Update, upgrade and clean package list.
 
    ```bash
    sudo apt update && sudo apt upgrade -y && sudo apt autoremove

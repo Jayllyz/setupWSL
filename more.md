@@ -141,6 +141,16 @@ alias ga='git add .'
 
 # wheather
 alias wheather='curl wttr.in'
+
+# packages manager
+alias apt='sudo apt'
+alias apti='sudo apt install'
+alias aptr='sudo apt remove'
+alias p='pnpm'
+alias pi='pnpm install'
+alias n='npm'
+alias ni='npm install'
+
 ```
 
 ## Ressources

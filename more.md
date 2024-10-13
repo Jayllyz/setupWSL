@@ -8,7 +8,7 @@ There are some packages that I use in my daily life, you can install them if you
 
 ### [Bat](https://github.com/sharkdp/bat)
 
-Bat improves the `cat` command, it adds syntax highlighting and git integration.
+Bat improves the `cat` command, it adds syntax highlighting and Git integration.
 
 ```bash
 sudo apt install bat -y
@@ -156,7 +156,7 @@ alias ni='npm install'
 ## Ressources
 
 - [Linux-Bash-Commands](https://github.com/trinib/Linux-Bash-Commands) - A list of useful Linux Bash commands.
-- [awesome-zsh-plugins](https://github.com/unixorn/awesome-zsh-plugins) - A collection of ZSH frameworks, plugins & themes.
+- [awesome-zsh-plugins](https://github.com/unixorn/awesome-zsh-plugins) - A collection of Zsh frameworks, plugins & themes.
 - [cheat.sh](https://github.com/chubin/cheat.sh) - The only cheat sheet you need.
 - [awesome-console-services](https://github.com/chubin/awesome-console-services) - List of useful console services. (inactive but still useful)
 

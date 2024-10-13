@@ -56,7 +56,7 @@ learn more [here](https://learn.microsoft.com/en-us/windows/wsl/about). :book:
 
 ### Better terminal with Zsh
 
-1. Install [ZSH](https://zsh.sourceforge.io/) & [cURL](https://curl.se/).
+1. Install [Zsh](https://zsh.sourceforge.io/) & [cURL](https://curl.se/).
 
    ```bash
    # Zsh is a shell designed for interactive use, you can have plugins, themes, etc.

@@ -129,7 +129,7 @@ learn more [here](https://learn.microsoft.com/en-us/windows/wsl/about). :book:
 
 ### Configuration
 
-1. Install build essential.
+1. Install build essential. (gcc, g++, make, must have for development)
 
    ```bash
    sudo apt install build-essential -y
@@ -150,8 +150,9 @@ learn more [here](https://learn.microsoft.com/en-us/windows/wsl/about). :book:
 
 4. Tool versioning.
 
-   > Managing version of tools is usefull for development, my favorite tool for this is [proto](https://moonrepo.dev/proto) <br>
-   > Why proto ? Because it's one tool to rule them all and it's made in Rust. ⚡
+   > Managing version of tools is usefull for development, my favorite tool for this is [proto](https://moonrepo.dev/proto). <br>
+   >
+   > If you only need to manage Node.js version, you can use [fnm](https://github.com/Schniz/fnm).
 
    ```bash
    # Requirements

@@ -46,7 +46,7 @@ learn more [here](https://learn.microsoft.com/en-us/windows/wsl/about). :book:
 
    I recommend using [Windows Terminal](https://aka.ms/terminal) or [WezTerm](https://wezfurlong.org/wezterm/), they are both great and have a lot of features to enhance your development experience.
 
- > Don't forget to set your new terminal as your default terminal and you're good to go!
+   Recommend to use a [Nerd Fonts](https://www.nerdfonts.com/font-downloads) for icons support (JetBrains Mono is a good choice).
 
 ### Better terminal with Zsh
 
@@ -72,7 +72,7 @@ learn more [here](https://learn.microsoft.com/en-us/windows/wsl/about). :book:
    git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
    ```
 
-   Then add the following line to your ~/.zshrc file :
+   Then add the following line to your `~/.zshrc file` :
 
    ```bash
    plugins=(git zsh-autosuggestions zsh-syntax-highlighting)
@@ -80,10 +80,8 @@ learn more [here](https://learn.microsoft.com/en-us/windows/wsl/about). :book:
 
 4. *(optional)* Install [starship](https://starship.rs/).
 
-   > A Nerdfont is required for the icons to work properly, you can find them [here](https://www.nerdfonts.com/font-downloads).
-
    ```bash
-   # Starship is the minimal, blazing-fast, and infinitely customizable prompt for any shell!
+   # Starship is a minimal, fast, and customizable prompt
    curl -fsSL https://starship.rs/install.sh | bash
    ```
 
@@ -93,7 +91,7 @@ learn more [here](https://learn.microsoft.com/en-us/windows/wsl/about). :book:
    eval "$(starship init zsh)"
    ```
 
-   Then you need to set your zsh theme to an empty string in your `~/.zshrc` file :
+   Then you need to set your Zsh theme to an empty string in your `~/.zshrc` file :
 
    ```bash
    ZSH_THEME=""

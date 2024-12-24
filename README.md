@@ -7,7 +7,7 @@
   - [What is WSL? :thinking:](#what-is-wsl-thinking)
   - [Installation :computer:](#installation-computer)
   - [Configuration :wrench:](#configuration-wrench)
-    - [Windows Terminal](#windows-terminal)
+    - [Terminal](#terminal)
     - [Better terminal with Zsh](#better-terminal-with-zsh)
     - [Configuration](#configuration)
   - [Useful Tools and Informations](#useful-tools-and-informations)
@@ -42,17 +42,11 @@ learn more [here](https://learn.microsoft.com/en-us/windows/wsl/about). :book:
 
 ## Configuration :wrench:
 
-### Windows Terminal
+### Terminal
 
-1. Open Microsoft Store and install [Windows Terminal](https://apps.microsoft.com/store/detail/windows-terminal/9N0DX20HK701?hl=fr-fr&gl=fr&rtc=1).
+   I recommend using [Windows Terminal](https://aka.ms/terminal) or [WezTerm](https://wezfurlong.org/wezterm/), they are both great and have a lot of features to enhance your development experience.
 
-   > This terminal is a modern, fast, efficient, powerful, and productive terminal application for users of command-line tools and shells like Command Prompt, PowerShell, and WSL.
-
-2. Open Windows Terminal and click on the settings icon in the top right corner.
-
-3. In the settings, click on the dropdown menu under "Default profile" and select your desired Linux distribution.
-
-4. Don't forget to set Windows Terminal as your default terminal and you're good to go!
+ > Don't forget to set your new terminal as your default terminal and you're good to go!
 
 ### Better terminal with Zsh
 
@@ -81,23 +75,31 @@ learn more [here](https://learn.microsoft.com/en-us/windows/wsl/about). :book:
    Then add the following line to your ~/.zshrc file :
 
    ```bash
-   plugins=(git sudo docker npm vscode zsh-autosuggestions zsh-syntax-highlighting)
+   plugins=(git zsh-autosuggestions zsh-syntax-highlighting)
    ```
 
-4. *(optional)* Install [Powerlevel10k](https://github.com/romkatv/powerlevel10k), if you want to use another theme, you can find more themes [here](https://github.com/ohmyzsh/ohmyzsh/wiki/Themes).
+4. *(optional)* Install [starship](https://starship.rs/).
 
-   > ⚠️ This theme require specific fonts, you can check here how to install [them](https://github.com/romkatv/powerlevel10k#meslo-nerd-font-patched-for-powerlevel10k).
+   > A Nerdfont is required for the icons to work properly, you can find them [here](https://www.nerdfonts.com/font-downloads).
 
    ```bash
-   git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/powerlevel10k
-   echo 'source ~/powerlevel10k/powerlevel10k.zsh-theme' >>~/.zshrc
+   # Starship is the minimal, blazing-fast, and infinitely customizable prompt for any shell!
+   curl -fsSL https://starship.rs/install.sh | bash
    ```
 
-   - Set `ZSH_THEME="powerlevel10k/powerlevel10k"` in ~/.zshrc.
+   Then add the following line at the end of your `~/.zshrc` file :
 
-   - Restart Zsh with `exec zsh`
+   ```bash
+   eval "$(starship init zsh)"
+   ```
 
-   - Type `p10k configure` if the configuration wizard doesn't start automatically.
+   Then you need to set your zsh theme to an empty string in your `~/.zshrc` file :
+
+   ```bash
+   ZSH_THEME=""
+   ```
+
+   For more information about starship, refer to the [starship documentation](https://starship.rs/).
 
 5. [Nano](https://www.nano-editor.org/) configuration.
    > Configuring Nano is optional, you can use another editor like Vim, Emacs, if you prefer.

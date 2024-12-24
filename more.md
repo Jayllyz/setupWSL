@@ -102,6 +102,12 @@ alias duf='duf -h -a --si'                                              # duf
 > [!NOTE]
 > You might need to do `unalias duf` before using the `duf` alias since it's already an alias by default.
 
+### [yazi](https://github.com/sxyazi/yazi)
+
+Yazi is a blazing fast terminal file manager written in Rust, based on async I/O.
+
+-> [Installation guide](https://yazi-rs.github.io/docs/installation)
+
 ### [nala](https://github.com/volitank/nala)
 
 Nala is a modern replacement for apt, it adds more features and a better UI.

@@ -150,24 +150,12 @@ learn more [here](https://learn.microsoft.com/en-us/windows/wsl/about). :book:
 
 4. Tool versioning.
 
-   > Managing version of tools is usefull for development, my favorite tool for this is [proto](https://moonrepo.dev/proto). <br>
-   >
-   > If you only need to manage Node.js version, you can use [fnm](https://github.com/Schniz/fnm).
-
-   ```bash
-   # Requirements
-   sudo apt install unzip gzip xz-utils -y
-
-   curl -fsSL https://moonrepo.dev/install/proto.sh | bash
-
-   proto setup
-
-   # Install what you need :
-   proto install node lts
-   proto install python 
-   ```
-
-   You can find more information about proto [here](https://moonrepo.dev/proto).
+   Many languages have their own version manager, here are some of them I recommend :
+   - [fnm](https://github.com/Schniz/fnm) Node.js version manager.
+   - [uv](https://github.com/Univention/uvm) Fastest Python package and project manager.
+   - [sdkman](https://sdkman.io/) Manage versions of Java, Kotlin, Maven, Gradle and more.
+   - [rustup](https://rustup.rs/) Rust version manager.
+   - [proto](https://moonrepo.dev/proto) General version manager (many languages supported).
 
 5. Update, upgrade and clean package list.
 

@@ -3,6 +3,8 @@ name: Lint
 
 on:
   push:
+    branches:
+      - main
   pull_request:
 
 jobs:
@@ -17,13 +19,11 @@ jobs:
       statuses: write
 
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v5
+      - uses: actions/checkout@08c6903cd8c0fde910a37f88322edcfb5dd907a8 # v5.0.0
         with:
           fetch-depth: 0
 
-      - name: Super-linter
-        uses: super-linter/super-linter/slim@v6
+      - uses: super-linter/super-linter/slim@7bba2eeb89d01dc9bfd93c497477a57e72c83240 # v8.2.0
         env:
           VALIDATE_ALL_CODEBASE: true
           VALIDATE_CHECKOV: false

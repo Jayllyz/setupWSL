@@ -82,7 +82,7 @@ learn more [here](https://learn.microsoft.com/en-us/windows/wsl/about). :book:
 
    ```bash
    # Starship is a minimal, fast, and customizable prompt
-   curl -fsSL https://starship.rs/install.sh | bash
+   curl -sS https://starship.rs/install.sh | sh
    ```
 
    Then add the following line at the end of your `~/.zshrc` file :
